@@ -1,21 +1,21 @@
 {
   "trash_id": "2b90e905c99490edc7c7a5787443748b",
-  "name": "[German] HD Bluray + WEB",
-  "trash_description": "German Quality Profile that covers:<br>- WEBDL: 720p, 1080p<br>- Bluray: 720p, 1080p",
+  "name": "[lekl7]-[German] HD Bluray + WEB",
+  "trash_description": "German Quality Profile that covers:<br>- WEBDL: 1080p<br>- Bluray: 1080p",
   "trash_url": "https://trash-guides.info/Radarr/radarr-setup-quality-profiles-german-en/#hd-bluray-web",
   "group": 11,
   "trash_score_set": "german",
   "upgradeAllowed": true,
-  "cutoff": "Merged QPs",
+  "cutoff": "1080p",
   "minFormatScore": 0,
   "cutoffFormatScore": 35000,
   "minUpgradeFormatScore": 1,
   "language": "Any",
   "items": [
     {
-      "name": "Merged QPs",
+      "name": "1080p",
       "allowed": true,
-      "items": ["Bluray-1080p", "WEBRip-1080p", "WEBDL-1080p", "Bluray-720p", "WEBDL-720p", "WEBRip-720p"]
+      "items": ["Bluray-1080p", "WEBDL-1080p"]
     },
     { "name": "Raw-HD", "allowed": false },
     { "name": "BR-DISK", "allowed": false },
@@ -29,6 +29,10 @@
     { "name": "HDTV-2160p", "allowed": false },
     { "name": "Remux-1080p", "allowed": false },
     { "name": "HDTV-1080p", "allowed": false },
+    { "name": "WEBRip-1080p", "allowed": false },
+    { "name": "Bluray-720p", "allowed": false },
+    { "name": "WEBDL-720p", "allowed": false },
+    { "name": "WEBRip-720p", "allowed": false },
     { "name": "HDTV-720p", "allowed": false },
     { "name": "Bluray-576p", "allowed": false },
     { "name": "Bluray-480p", "allowed": false },
