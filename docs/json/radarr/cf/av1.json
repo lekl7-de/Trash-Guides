@@ -1,11 +1,11 @@
 {
   "trash_id": "cae4ca30163749b891686f95532519bd",
   "trash_scores": {
-    "default": -10000,
-    "sqp-1-2160p": -10000,
-    "anime-radarr": -10000,
-    "german": -35000,
-    "german-anime": -35000
+    "default": 0,
+    "sqp-1-2160p": 0,
+    "anime-radarr": 0,
+    "german": 0,
+    "german-anime": 0
   },
   "name": "AV1",
   "includeCustomFormatWhenRenaming": false,
