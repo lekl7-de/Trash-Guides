@@ -1,9 +1,0 @@
-nav:
-  - Home: index.md
-  - NZBGet
-  - SABnzbd
-  - qBittorrent
-  - Deluge
-  - ruTorrent
-  - Port Forwarding Troubleshooting: port-forwarding-troubleshooting.md
-  - 3rd Party tools: 3rd-party-tools.md
