@@ -1,0 +1,30 @@
+{
+  "trash_id": "98dbfda8aebd445a6eefa314d8336013",
+  "trash_scores": {
+    "default": -10000,
+    "german": -35000,
+    "german-anime": -35000
+  },
+  "name": "WOTT x265",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "WOTT",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "^(WOTT)$"
+      }
+    },
+    {
+      "name": "x|h265",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "[xh][ ._-]?265|\\bHEVC(\\b|\\d)"
+      }
+    }
+  ]
+}
