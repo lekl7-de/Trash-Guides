@@ -1,21 +1,22 @@
 {
   "trash_id": "3b0fa37fddaaefc931b75f2889d4b4f5",
-  "name": "[German] UHD Bluray + WEB",
+  "name": "[lekl7]-[German] UHD Bluray + WEB",
   "trash_description": "German Quality Profile that covers:<br>- WEBDL: 2160p<br>- Bluray: 2160p",
   "trash_url": "https://trash-guides.info/Sonarr/sonarr-setup-quality-profiles-german-en/#uhd-bluray-web-2160p",
   "group": 11,
   "trash_score_set": "german",
   "upgradeAllowed": true,
-  "cutoff": "Merged QPs",
+  "cutoff": "2160p",
   "minFormatScore": 0,
   "cutoffFormatScore": 35000,
   "minUpgradeFormatScore": 1,
   "items": [
     {
-      "name": "Merged QPs",
+      "name": "2160p",
       "allowed": true,
-      "items": ["Bluray-2160p", "WEBDL-2160p", "WEBRip-2160p"]
+      "items": ["Bluray-2160p", "WEBDL-2160p"]
     },
+    { "name": "WEBRip-2160p", "allowed": false },
     { "name": "Bluray-2160p Remux", "allowed": false },
     { "name": "HDTV-2160p", "allowed": false },
     { "name": "Bluray-1080p Remux", "allowed": false },
