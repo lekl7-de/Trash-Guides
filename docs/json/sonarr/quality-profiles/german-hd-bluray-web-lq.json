@@ -27,7 +27,7 @@
     { "name": "Bluray-1080p Remux", "allowed": false },
     { "name": "Raw-HD", "allowed": false },
     { "name": "HDTV-1080p", "allowed": false },
-    { "name": "WEBRip-1080p", "allowed": false },
+    { "name": "WEBRip-1080p", "allowed": true },
     { "name": "Bluray-720p", "allowed": false },
     { "name": "WEBDL-720p", "allowed": false },
     { "name": "WEBRip-720p", "allowed": false },
