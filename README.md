@@ -26,6 +26,10 @@ It is stripped down to just the custom format and quality profile JSON data unde
 - **German Remux HD/UHD:** a Remux-only profile — no WEBDL/WEBRip/Bluray fallback at any
   resolution. Follows the normal upgrade path from Remux-1080p to Remux-2160p in case a German
   2160p Remux ever shows up.
+- **TSiNT (Sonarr only):** added to German Web Tier 02 for their full-size WEB-AVC releases,
+  but their WEB-HEVC encodes are close to microsized quality — a new `WEB-HEVC Microsized`
+  custom format blocks those specifically (while scoring them as preferred in the LQ profile,
+  same as `German Microsized`).
 
 > **Note:** These changes were only made to the **German** profiles. All other profiles are
 > left as they are in upstream TRaSH-Guides.
