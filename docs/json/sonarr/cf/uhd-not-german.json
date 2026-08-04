@@ -1,0 +1,29 @@
+{
+  "trash_id": "a9b7d31991714372a72a1001c3cffd7f",
+  "trash_scores": {
+    "default": -10000,
+    "german-anime": -35000
+  },
+  "name": "UHD Not German",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "2160p",
+      "implementation": "ResolutionSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 2160
+      }
+    },
+    {
+      "name": "NOT German",
+      "implementation": "LanguageSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": 4
+      }
+    }
+  ]
+}
