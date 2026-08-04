@@ -23,6 +23,9 @@ It is stripped down to just the custom format and quality profile JSON data unde
 - **German Anime HD+UHD Bluray + WEB:** a combined 1080p/2160p anime profile that follows the
   normal upgrade path all the way to UHD, but only ever grabs a 2160p release if it has German
   audio — non-German UHD releases are blocked outright.
+- **German Remux HD/UHD:** a Remux-only profile — no WEBDL/WEBRip/Bluray fallback at any
+  resolution. Follows the normal upgrade path from Remux-1080p to Remux-2160p in case a German
+  2160p Remux ever shows up.
 
 > **Note:** These changes were only made to the **German** profiles. All other profiles are
 > left as they are in upstream TRaSH-Guides.
