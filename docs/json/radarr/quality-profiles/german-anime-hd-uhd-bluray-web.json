@@ -1,7 +1,7 @@
 {
   "trash_id": "571b360a9a1d459e88615ece8fdb0a5b",
   "name": "[lekl7]-[German] Anime HD+UHD Bluray + WEB",
-  "trash_description": "German Anime Quality Profile that covers:<br>- WEBDL: 1080p, 2160p<br>- Bluray: 1080p, 2160p<br>- Upgrades to 2160p only for German-dubbed releases",
+  "trash_description": "German Anime Quality Profile that covers:<br>- WEBDL: 1080p, 2160p<br>- Bluray: 1080p, 2160p<br>- WEBRip: 1080p, 2160p<br>- Combines the HD and UHD German anime profiles: follows the normal upgrade path all the way to 2160p, but only ever grabs a 2160p release if it has German audio - non-German UHD releases are blocked outright",
   "group": 11,
   "trash_score_set": "german-anime",
   "upgradeAllowed": true,

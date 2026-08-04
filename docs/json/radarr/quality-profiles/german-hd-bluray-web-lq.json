@@ -1,7 +1,7 @@
 {
   "trash_id": "d021c3d5380c4d2eb1d14042a382fe18",
   "name": "[lekl7]-[German] HD Bluray + WEB (LQ)",
-  "trash_description": "German Quality Profile that covers:<br>- WEBDL: 1080p<br>- Bluray: 1080p<br>- Prefers German Microsized releases over full-size ones",
+  "trash_description": "German Quality Profile that covers:<br>- WEBDL: 1080p<br>- Bluray: 1080p<br>- WEBRip: 1080p (allowed as a fallback, not preferred)<br>- Low-quality sibling of [German] HD Bluray + WEB: actively prefers small German Microsized releases over full-size ones instead of blocking them",
   "trash_url": "https://trash-guides.info/Radarr/radarr-setup-quality-profiles-german-en/#hd-bluray-web",
   "group": 11,
   "trash_score_set": "german-microsized",
