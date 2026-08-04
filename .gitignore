@@ -10,3 +10,4 @@ sync.ffs_db
 sync.ffs_lock
 .claude
 .claude/settings.local.json
+AGENTS.md
