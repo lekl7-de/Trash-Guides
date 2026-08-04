@@ -277,15 +277,6 @@
       }
     },
     {
-      "name": "WOTT",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(WOTT)$"
-      }
-    },
-    {
       "name": "SunDry",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,

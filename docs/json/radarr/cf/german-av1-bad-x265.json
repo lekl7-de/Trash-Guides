@@ -5,14 +5,14 @@
     "german": -35000,
     "german-anime": -35000
   },
-  "name": "WOTT x265",
+  "name": "AV1-Groups Bad x265",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
       "name": "WOTT",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
-      "required": true,
+      "required": false,
       "fields": {
         "value": "^(WOTT)$"
       }
