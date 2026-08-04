@@ -15,7 +15,7 @@
     {
       "name": "1080p",
       "allowed": true,
-      "items": ["Bluray-1080p", "WEBDL-1080p"]
+      "items": ["Bluray-1080p", "WEBDL-1080p", "WEBRip-1080p"]
     },
     { "name": "Raw-HD", "allowed": false },
     { "name": "BR-DISK", "allowed": false },
@@ -29,7 +29,6 @@
     { "name": "HDTV-2160p", "allowed": false },
     { "name": "Remux-1080p", "allowed": false },
     { "name": "HDTV-1080p", "allowed": false },
-    { "name": "WEBRip-1080p", "allowed": true },
     { "name": "Bluray-720p", "allowed": false },
     { "name": "WEBDL-720p", "allowed": false },
     { "name": "WEBRip-720p", "allowed": false },
