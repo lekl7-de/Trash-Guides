@@ -2,7 +2,8 @@
   "trash_id": "83304f261cf516bb208c18c54c0adf97",
   "trash_scores": {
     "default": -10000,
-    "german": -35000
+    "german": -35000,
+    "german-microsized": -35000
   },
   "name": "SDR (no WEBDL)",
   "includeCustomFormatWhenRenaming": false,

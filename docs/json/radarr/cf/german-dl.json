@@ -3,6 +3,7 @@
   "trash_scores": {
     "default": -10000,
     "german": 11000,
+    "german-microsized": 11000,
     "german-anime": 11000
   },
   "name": "German DL",

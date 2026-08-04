@@ -1,7 +1,8 @@
 {
   "trash_id": "237eda4ef550a97da2c9d87b437e500b",
   "trash_scores": {
-    "default": -35000
+    "default": -35000,
+    "german-microsized": 3000
   },
   "name": "German Microsized",
   "includeCustomFormatWhenRenaming": false,

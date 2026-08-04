@@ -3,6 +3,7 @@
   "trash_scores": {
     "default": -10000,
     "german": 0,
+    "german-microsized": 0,
     "german-anime": 0
   },
   "name": "x265 (HD)",

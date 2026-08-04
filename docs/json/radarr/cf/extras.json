@@ -3,6 +3,7 @@
   "trash_scores": {
     "default": -10000,
     "german": -35000,
+    "german-microsized": -35000,
     "german-anime": -35000
   },
   "trash_regex": "https://regex101.com/r/nzK5TQ/1",

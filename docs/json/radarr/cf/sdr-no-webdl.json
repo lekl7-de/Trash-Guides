@@ -3,6 +3,7 @@
   "trash_scores": {
     "default": -10000,
     "german": -35000,
+    "german-microsized": -35000,
     "sqp-4-ma-hybrid": 0
   },
   "name": "SDR (no WEBDL)",
