@@ -12,9 +12,17 @@ It is stripped down to just the custom format and quality profile JSON data unde
 
 - **AV1 is allowed:** the negative AV1 scores have been neutralized, so high-quality AV1
   encodes are no longer blocked.
-- **Adjusted quality profiles:** some German quality profiles have been tightened to my taste
-  (for example, dropping 720p and WEBRip in favor of 1080p/2160p Bluray and WEB-DL). These
-  are prefixed with `[lekl7]`.
+- **Adjusted quality profiles:** the German quality profiles have been tightened to my taste
+  (for example, dropping 720p in favor of 1080p/2160p Bluray and WEB-DL). These are prefixed
+  with `[lekl7]`.
+- **AV1-Groups Bad x265:** groups that make good AV1 encodes but bad x265/HEVC ones (starting
+  with WOTT) have their h265 encodes blocked while their AV1 encodes stay rewarded.
+- **German HD Bluray + WEB (LQ):** a low-quality sibling of the standard 1080p profile that
+  actively prefers small `German Microsized` releases over full-size ones (instead of
+  blocking them) and allows WEBRip-1080p as a non-preferred fallback.
+- **German Anime HD+UHD Bluray + WEB:** a combined 1080p/2160p anime profile that follows the
+  normal upgrade path all the way to UHD, but only ever grabs a 2160p release if it has German
+  audio — non-German UHD releases are blocked outright.
 
 > **Note:** These changes were only made to the **German** profiles. All other profiles are
 > left as they are in upstream TRaSH-Guides.
