@@ -37,7 +37,9 @@
     "name": "German",
     "profiles": {
       "german-anime-hd-bluray-web": "bf3cc2e99ad9a804a9b0d0e538e1fbba",
+      "german-anime-hd-uhd-bluray-web": "571b360a9a1d459e88615ece8fdb0a5b",
       "german-hd-bluray-web": "2b90e905c99490edc7c7a5787443748b",
+      "german-hd-bluray-web-lq": "d021c3d5380c4d2eb1d14042a382fe18",
       "german-hd-remux-web": "c13c33fdd2c306266b34cb9946de5919",
       "german-uhd-bluray-web": "27cc3d153c0a799fd139ef1ff4c4cc42",
       "german-uhd-bluray-web-alternative": "425da1ba30711b55d2eb371437ec98d7",
