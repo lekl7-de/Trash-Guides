@@ -34,6 +34,9 @@ Der Fork ist auf die Custom-Format- und Quality-Profile-JSON-Daten unter
 - **WOTT, alyh, TzP in German Bluray Tier 02:** diese Gruppen liefern gute Encodes (egal ob
   AV1 oder x265/HEVC) und sind ganz normal als Tier-02-Gruppen gelistet — keine
   Sonderbehandlung, kein Blocking.
+- **Audio-Codec-Belohnung:** AC3 (`DD`) und EAC3 (`DD+`) werden im 1080p- und 1080p-LQ-Profil
+  standardmäßig belohnt, dazu ein kleiner Bonus für 5.1 Surround. Im 2160p-Profil wird DTS
+  belohnt, dazu ein kleiner Bonus für 7.1 Surround.
 
 > **Hinweis:** Diese Änderungen wurden ausschließlich an den **German**-Profilen vorgenommen.
 > Alle anderen Profile entsprechen unverändert dem Upstream-TRaSH-Guides.

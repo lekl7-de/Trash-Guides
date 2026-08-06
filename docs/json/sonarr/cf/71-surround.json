@@ -1,5 +1,8 @@
 {
   "trash_id": "204c8c3e7315bb0ea81332774fa888d6",
+  "trash_scores": {
+    "default": 150
+  },
   "name": "7.1 Surround",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [

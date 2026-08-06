@@ -1,5 +1,8 @@
 {
   "trash_id": "3fbafa924f361e66fbc6187af82dfa85",
+  "trash_scores": {
+    "default": 100
+  },
   "name": "5.1 Surround",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
