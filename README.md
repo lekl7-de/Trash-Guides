@@ -24,13 +24,13 @@ Der Fork ist auf die Custom-Format- und Quality-Profile-JSON-Daten unter
   Diese sind mit `[lekl7]` präfixiert.
 - **German HD Bluray + WEB (LQ):** ein Low-Quality-Geschwisterprofil des Standard-1080p-Profils,
   das kleine `German Microsized`-Releases aktiv bevorzugt (statt sie zu blockieren) und
-  WEBRip-1080p als nicht bevorzugten Fallback erlaubt. Dual-Audio-Releases (deutsche Synchro +
-  Originalspur) werden hier bewusst **nicht** belohnt (`German DL` und `German 1080p Booster`
-  fehlen absichtlich) — kleine Releases sind fast immer German-only, Dual-Audio würde dem
-  Zweck des Profils widersprechen. `German Microsized` ist mit `+7000` bewertet — hoch genug,
-  dass eine kleine Gruppe wie FuN oder w00t jedes noch so vollständig ausgestattete Bluray-
-  oder Web-Tier-01-Release schlägt, selbst wenn dieses zusätzlich IMAX, HDR und verlustfreies
-  Audio mitbringt.
+  WEBRip-1080p als nicht bevorzugten Fallback erlaubt. Der spezielle Dual-Audio-Zusatzbonus
+  (`German 1080p Booster`, `+650` nur für German+Original-Language-Releases) fehlt hier
+  absichtlich, die reguläre Sprachwertung (`German DL`, gleichwertig zu `German DL
+  (undefined)`) bleibt aber erhalten, damit bestätigte Dual-Audio-Releases nicht auf 0 Punkte
+  fallen. `German Microsized` ist mit `+8000` bewertet — hoch genug, dass eine kleine Gruppe
+  wie FuN oder w00t jedes noch so vollständig ausgestattete Bluray- oder Web-Tier-01-Release
+  schlägt, selbst mit Dual-Audio, IMAX, HDR und verlustfreiem Audio.
 - **German Anime HD+UHD Bluray + WEB (nur Sonarr):** ein kombiniertes 1080p/2160p-Anime-Profil,
   das dem normalen Upgrade-Pfad bis UHD folgt, aber ein 2160p-Release nur dann greift, wenn es
   deutsche Tonspur hat — Nicht-deutsche UHD-Releases werden grundsätzlich blockiert.
