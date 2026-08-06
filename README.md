@@ -1,51 +1,55 @@
-# Personal TRaSH-Guides Fork
+# Persönlicher TRaSH-Guides Fork
 
-This is a **personal fork** of [TRaSH-Guides](https://trash-guides.info/) that tweaks the
-quality profiles a bit to match my own preferences, and **allows high-quality AV1 encodes**
-instead of penalizing them.
+> **Hinweis:** Dieses Projekt richtet sich an deutschsprachige Nutzer — die angepassten
+> Quality-Profiles betreffen ausschließlich die **German**-Profile.
 
-It is stripped down to just the custom format and quality profile JSON data under
-[`docs/json`](docs/json), so it can be consumed directly by a custom format sync application
-(Recyclarr, Clonarr, etc.).
+Dies ist ein **persönlicher Fork** von [TRaSH-Guides](https://trash-guides.info/), der die
+Quality-Profiles etwas an meine eigenen Vorlieben anpasst und **hochwertige AV1-Encodes
+zulässt**, statt sie zu bestrafen.
 
-## What's different from upstream
+Der Fork ist auf die Custom-Format- und Quality-Profile-JSON-Daten unter
+[`docs/json`](docs/json) reduziert, damit er direkt von einer Custom-Format-Sync-Anwendung
+(Recyclarr, Clonarr, etc.) eingelesen werden kann.
 
-- **AV1 is allowed:** the negative AV1 scores have been neutralized, so high-quality AV1
-  encodes are no longer blocked.
-- **Adjusted quality profiles:** the German quality profiles have been tightened to my taste
-  (for example, dropping 720p in favor of 1080p/2160p Bluray and WEB-DL). These are prefixed
-  with `[lekl7]`.
-- **AV1-Groups Bad x265:** groups that make good AV1 encodes but bad x265/HEVC ones (starting
-  with WOTT) have their h265 encodes blocked while their AV1 encodes stay rewarded.
-- **German HD Bluray + WEB (LQ):** a low-quality sibling of the standard 1080p profile that
-  actively prefers small `German Microsized` releases over full-size ones (instead of
-  blocking them) and allows WEBRip-1080p as a non-preferred fallback.
-- **German Anime HD+UHD Bluray + WEB (Sonarr only):** a combined 1080p/2160p anime profile
-  that follows the normal upgrade path all the way to UHD, but only ever grabs a 2160p release
-  if it has German audio — non-German UHD releases are blocked outright.
-- **German Remux HD/UHD:** a Remux-only profile — no WEBDL/WEBRip/Bluray fallback at any
-  resolution. Follows the normal upgrade path from Remux-1080p to Remux-2160p in case a German
-  2160p Remux ever shows up.
-- **TSiNT:** on Sonarr, added to German Web Tier 02 for their full-size WEB-AVC releases, but
-  their WEB-HEVC encodes are close to microsized quality — a new `WEB-HEVC Microsized` custom
-  format blocks those specifically (while scoring them as preferred in the LQ profile, same as
-  `German Microsized`). On Radarr, added to German Bluray Tier 01 for their high-quality AV1
-  movie encodes.
-- **AV1 group whitelist:** since AV1 is unblocked globally, two paired custom formats enforce a
-  strict pairing between AV1 and a vetted group list: `AV1 Whitelist: Unlisted Group` blocks any
-  AV1 release (including group-less ones) whose group isn't approved, and
-  `AV1 Whitelist: Non-AV1 Release` blocks non-AV1 releases from an approved group — so those
-  groups are only ever grabbed as AV1. Currently only `WOTT` is approved. Applies to the same
-  German HD/UHD/LQ profiles as `AV1-Groups Bad x265`.
+## Was sich vom Upstream unterscheidet
 
-> **Note:** These changes were only made to the **German** profiles. All other profiles are
-> left as they are in upstream TRaSH-Guides.
+- **AV1 ist erlaubt:** die negativen AV1-Scores wurden neutralisiert, sodass hochwertige
+  AV1-Encodes nicht mehr blockiert werden.
+- **Angepasste Quality-Profiles:** die German-Quality-Profiles wurden nach meinem Geschmack
+  verschärft (z. B. wird 720p zugunsten von 1080p/2160p Bluray und WEB-DL fallengelassen).
+  Diese sind mit `[lekl7]` präfixiert.
+- **AV1-Groups Bad x265:** Gruppen, die gute AV1-Encodes, aber schlechte x265/HEVC-Encodes
+  liefern (bisher WOTT), bekommen ihre h265-Encodes blockiert, während ihre AV1-Encodes weiter
+  belohnt werden.
+- **German HD Bluray + WEB (LQ):** ein Low-Quality-Geschwisterprofil des Standard-1080p-Profils,
+  das kleine `German Microsized`-Releases aktiv bevorzugt (statt sie zu blockieren) und
+  WEBRip-1080p als nicht bevorzugten Fallback erlaubt.
+- **German Anime HD+UHD Bluray + WEB (nur Sonarr):** ein kombiniertes 1080p/2160p-Anime-Profil,
+  das dem normalen Upgrade-Pfad bis UHD folgt, aber ein 2160p-Release nur dann greift, wenn es
+  deutsche Tonspur hat — Nicht-deutsche UHD-Releases werden grundsätzlich blockiert.
+- **German Remux HD/UHD:** ein reines Remux-Profil — kein WEBDL/WEBRip/Bluray-Fallback bei
+  keiner Auflösung. Folgt dem normalen Upgrade-Pfad von Remux-1080p zu Remux-2160p, falls
+  jemals ein deutsches 2160p-Remux auftaucht.
+- **TSiNT:** auf Sonarr zu German Web Tier 02 hinzugefügt für ihre vollwertigen
+  WEB-AVC-Releases, aber ihre WEB-HEVC-Encodes sind nah an Microsized-Qualität — ein neues
+  `WEB-HEVC Microsized`-Custom-Format blockiert diese gezielt (während sie im LQ-Profil als
+  bevorzugt bewertet werden, genau wie `German Microsized`). Auf Radarr zu German Bluray Tier 01
+  hinzugefügt für ihre hochwertigen AV1-Movie-Encodes.
+- **AV1-Gruppen-Whitelist:** da AV1 global entblockt ist, erzwingen zwei gekoppelte
+  Custom-Formats eine strikte Kopplung zwischen AV1 und einer geprüften Gruppenliste:
+  `AV1 Whitelist: Unlisted Group` blockiert jedes AV1-Release (auch gruppenlose) dessen Gruppe
+  nicht freigegeben ist, und `AV1 Whitelist: Non-AV1 Release` blockiert Nicht-AV1-Releases einer
+  freigegebenen Gruppe — sodass diese Gruppen nur noch als AV1 gegriffen werden. Aktuell ist nur
+  `WOTT` freigegeben. Gilt für dieselben German-HD/UHD/LQ-Profile wie `AV1-Groups Bad x265`.
 
-Everything else follows the excellent work of the original TRaSH-Guides project.
+> **Hinweis:** Diese Änderungen wurden ausschließlich an den **German**-Profilen vorgenommen.
+> Alle anderen Profile entsprechen unverändert dem Upstream-TRaSH-Guides.
+
+Alles Weitere folgt der hervorragenden Arbeit des ursprünglichen TRaSH-Guides-Projekts.
 
 ## Credit
 
-All of the underlying custom formats, scoring, and profile design come from
-[TRaSH-Guides](https://trash-guides.info/), developed in close collaboration with the Radarr
-and Sonarr teams. Please refer to the official guides for documentation, and support the
-original project.
+Alle zugrundeliegenden Custom Formats, Scorings und Profile-Designs stammen von
+[TRaSH-Guides](https://trash-guides.info/), entwickelt in enger Zusammenarbeit mit den Radarr-
+und Sonarr-Teams. Für Dokumentation bitte die offiziellen Guides konsultieren und das
+Original-Projekt unterstützen.
