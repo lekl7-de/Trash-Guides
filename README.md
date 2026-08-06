@@ -39,6 +39,9 @@ Der Fork ist auf die Custom-Format- und Quality-Profile-JSON-Daten unter
   belohnt, dazu ein kleiner Bonus für 7.1 Surround.
 - **IMAX-Belohnung (nur Radarr):** `IMAX` und `IMAX Enhanced` sind im 1080p-, 1080p-LQ- und
   2160p-Profil aktiv.
+- **HDR-Belohnung:** `HDR` und `HDR10+ Boost` sind im 1080p-, 1080p-LQ- und 2160p-Profil aktiv
+  (reiner Bonus, kein Blocking). `DV (w/o HDR fallback)` blockiert Dolby-Vision-Releases ohne
+  HDR10-Fallback in denselben drei Profilen. Reines SDR-2160p wird nicht blockiert.
 
 > **Hinweis:** Diese Änderungen wurden ausschließlich an den **German**-Profilen vorgenommen.
 > Alle anderen Profile entsprechen unverändert dem Upstream-TRaSH-Guides.
