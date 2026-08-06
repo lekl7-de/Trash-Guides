@@ -6,7 +6,7 @@
     "german-microsized": -35000,
     "german-anime": -35000
   },
-  "name": "AV1-Groups Unapproved",
+  "name": "AV1 Whitelist: Unlisted Group",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {

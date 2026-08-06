@@ -1,18 +1,18 @@
 {
-  "trash_id": "5fdeb3ee610547629ff6b62cd11adbf5",
+  "trash_id": "99711221e11b4a89bcdf00365fbc2ede",
   "trash_scores": {
     "default": -10000,
     "german": -35000,
     "german-microsized": -35000,
     "german-anime": -35000
   },
-  "name": "AV1 Whitelist: Unlisted Group",
+  "name": "AV1 Whitelist: Non-AV1 Release",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "AV1",
+      "name": "Not AV1",
       "implementation": "ReleaseTitleSpecification",
-      "negate": false,
+      "negate": true,
       "required": true,
       "fields": {
         "value": "\\bAV1\\b"
@@ -21,8 +21,8 @@
     {
       "name": "WOTT",
       "implementation": "ReleaseGroupSpecification",
-      "negate": true,
-      "required": true,
+      "negate": false,
+      "required": false,
       "fields": {
         "value": "^(WOTT)$"
       }
