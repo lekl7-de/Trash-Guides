@@ -70,15 +70,6 @@
       }
     },
     {
-      "name": "TSiNT",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(TSiNT)$"
-      }
-    },
-    {
       "name": "VECTOR",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,

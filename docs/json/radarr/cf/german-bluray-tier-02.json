@@ -70,6 +70,33 @@
       }
     },
     {
+      "name": "WOTT",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(WOTT)$"
+      }
+    },
+    {
+      "name": "alyh",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(alyh)$"
+      }
+    },
+    {
+      "name": "TzP",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(TzP)$"
+      }
+    },
+    {
       "name": "Bluray",
       "implementation": "SourceSpecification",
       "negate": false,

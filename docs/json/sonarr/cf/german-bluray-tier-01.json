@@ -113,15 +113,6 @@
       "fields": {
         "value": 7
       }
-    },
-    {
-      "name": "WOTT",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "WOTT"
-      }
     }
   ]
 }

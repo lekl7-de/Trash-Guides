@@ -122,24 +122,6 @@
       "fields": {
         "value": 5
       }
-    },
-    {
-      "name": "WOTT",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "WOTT"
-      }
-    },
-    {
-      "name": "TSiNT",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "TSiNT"
-      }
     }
   ]
 }
