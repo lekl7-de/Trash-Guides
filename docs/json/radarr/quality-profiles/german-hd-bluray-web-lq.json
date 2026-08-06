@@ -52,11 +52,9 @@
     { "name": "Unknown", "allowed": false }
   ],
   "formatItems": {
-    "German 1080p Booster": "3bc8df3a71baaac60a31ef696ea72d36",
     "1080p": "820b09bb9acbfde9c35c71e0e565dad8",
     "720p": "b2be17d608fc88818940cd1833b0b24c",
     "German": "86bc3115eb4e9873ac96904a4a68e19e",
-    "German DL": "f845be10da4f442654c13e1f2c3d6cd5",
     "German DL (undefined)": "6aad77771dabe9d3e9d7be86f310b867",
     "Not German or English": "4eadb75fb23d09dfc0a8e3f687e72287",
     "DD": "c2998bd0d90ed5621d8df281e839436e",
