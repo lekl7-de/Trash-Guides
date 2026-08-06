@@ -31,6 +31,10 @@ It is stripped down to just the custom format and quality profile JSON data unde
   format blocks those specifically (while scoring them as preferred in the LQ profile, same as
   `German Microsized`). On Radarr, added to German Bluray Tier 01 for their high-quality AV1
   movie encodes.
+- **AV1 group allow-list:** since AV1 is unblocked globally, a new `AV1-Groups Unapproved`
+  custom format blocks any AV1 release (including group-less ones) whose release group isn't
+  explicitly approved, so only vetted groups' AV1 encodes get grabbed. Currently only `WOTT` is
+  approved. Applies to the same German HD/UHD/LQ profiles as `AV1-Groups Bad x265`.
 
 > **Note:** These changes were only made to the **German** profiles. All other profiles are
 > left as they are in upstream TRaSH-Guides.
