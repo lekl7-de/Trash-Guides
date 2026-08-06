@@ -1,5 +1,9 @@
 # Persönlicher TRaSH-Guides Fork
 
+> **Note (EN):** This is a personal, German-language fork of TRaSH-Guides. It's tailored to a
+> single owner's preferences and is not intended for general use — see
+> [TRaSH-Guides](https://trash-guides.info/) for the original, actively maintained project.
+
 > **Hinweis:** Dieses Projekt richtet sich an deutschsprachige Nutzer — die angepassten
 > Quality-Profiles betreffen ausschließlich die **German**-Profile.
 
@@ -53,3 +57,7 @@ Alle zugrundeliegenden Custom Formats, Scorings und Profile-Designs stammen von
 [TRaSH-Guides](https://trash-guides.info/), entwickelt in enger Zusammenarbeit mit den Radarr-
 und Sonarr-Teams. Für Dokumentation bitte die offiziellen Guides konsultieren und das
 Original-Projekt unterstützen.
+
+---
+
+*Dieses Repository wird mit Unterstützung von [Claude](https://claude.com) (Anthropic) gepflegt.*
