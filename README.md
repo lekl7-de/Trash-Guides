@@ -37,6 +37,8 @@ Der Fork ist auf die Custom-Format- und Quality-Profile-JSON-Daten unter
 - **Audio-Codec-Belohnung:** AC3 (`DD`) und EAC3 (`DD+`) werden im 1080p- und 1080p-LQ-Profil
   standardmäßig belohnt, dazu ein kleiner Bonus für 5.1 Surround. Im 2160p-Profil wird DTS
   belohnt, dazu ein kleiner Bonus für 7.1 Surround.
+- **IMAX-Belohnung (nur Radarr):** `IMAX` und `IMAX Enhanced` sind im 1080p-, 1080p-LQ- und
+  2160p-Profil aktiv.
 
 > **Hinweis:** Diese Änderungen wurden ausschließlich an den **German**-Profilen vorgenommen.
 > Alle anderen Profile entsprechen unverändert dem Upstream-TRaSH-Guides.
