@@ -49,6 +49,12 @@ Der Fork ist auf die Custom-Format- und Quality-Profile-JSON-Daten unter
 - **HDR-Belohnung:** `HDR` und `HDR10+ Boost` sind im 1080p-, 1080p-LQ- und 2160p-Profil aktiv
   (reiner Bonus, kein Blocking). `DV (w/o HDR fallback)` blockiert Dolby-Vision-Releases ohne
   HDR10-Fallback in denselben drei Profilen. Reines SDR-2160p wird nicht blockiert.
+- **Movie-Version-Belohnung (nur Radarr):** `Special Edition` (deckt Director's Cut, Extended,
+  Unrated, Uncut u. ä. per Regex ab), `4K Remaster`, `Criterion Collection`, `Hybrid`,
+  `Masters of Cinema`, `Open Matte`, `Remaster` und `Vinegar Syndrome` sind in allen
+  German-Profilen aktiv (1080p, 1080p LQ, 2160p, UHD Alternative, Remux HD/UHD). `Hybrid` und
+  `Remaster` sind zusätzlich auch bei Sonarr aktiv (inkl. Anime HD+UHD) — die restlichen CFs
+  gibt es dort nicht (reine Film-Konzepte).
 
 > **Hinweis:** Diese Änderungen wurden ausschließlich an den **German**-Profilen vorgenommen.
 > Alle anderen Profile entsprechen unverändert dem Upstream-TRaSH-Guides.
