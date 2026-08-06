@@ -27,7 +27,10 @@ Der Fork ist auf die Custom-Format- und Quality-Profile-JSON-Daten unter
   WEBRip-1080p als nicht bevorzugten Fallback erlaubt. Dual-Audio-Releases (deutsche Synchro +
   Originalspur) werden hier bewusst **nicht** belohnt (`German DL` und `German 1080p Booster`
   fehlen absichtlich) — kleine Releases sind fast immer German-only, Dual-Audio würde dem
-  Zweck des Profils widersprechen.
+  Zweck des Profils widersprechen. `German Microsized` ist mit `+7000` bewertet — hoch genug,
+  dass eine kleine Gruppe wie FuN oder w00t jedes noch so vollständig ausgestattete Bluray-
+  oder Web-Tier-01-Release schlägt, selbst wenn dieses zusätzlich IMAX, HDR und verlustfreies
+  Audio mitbringt.
 - **German Anime HD+UHD Bluray + WEB (nur Sonarr):** ein kombiniertes 1080p/2160p-Anime-Profil,
   das dem normalen Upgrade-Pfad bis UHD folgt, aber ein 2160p-Release nur dann greift, wenn es
   deutsche Tonspur hat — Nicht-deutsche UHD-Releases werden grundsätzlich blockiert.
