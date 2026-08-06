@@ -43,8 +43,9 @@ Der Fork ist auf die Custom-Format- und Quality-Profile-JSON-Daten unter
   Custom-Formats eine strikte Kopplung zwischen AV1 und einer geprüften Gruppenliste:
   `AV1 Whitelist: Unlisted Group` blockiert jedes AV1-Release (auch gruppenlose) dessen Gruppe
   nicht freigegeben ist, und `AV1 Whitelist: Non-AV1 Release` blockiert Nicht-AV1-Releases einer
-  freigegebenen Gruppe — sodass diese Gruppen nur noch als AV1 gegriffen werden. Aktuell ist nur
-  `WOTT` freigegeben. Gilt für dieselben German-HD/UHD/LQ-Profile wie `AV1-Groups Bad x265`.
+  freigegebenen Gruppe — sodass diese Gruppen nur noch als AV1 gegriffen werden. Aktuell sind
+  `WOTT`, `alyh` und `TzP` freigegeben (`alyh` und `TzP` sind I2P-Release-Gruppen). Gilt für
+  dieselben German-HD/UHD/LQ-Profile wie `AV1-Groups Bad x265`.
 
 > **Hinweis:** Diese Änderungen wurden ausschließlich an den **German**-Profilen vorgenommen.
 > Alle anderen Profile entsprechen unverändert dem Upstream-TRaSH-Guides.
