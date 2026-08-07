@@ -29,19 +29,21 @@ Der Fork ist auf die Custom-Format- und Quality-Profile-JSON-Daten unter
   absichtlich, die reguläre Sprachwertung (`German DL`, gleichwertig zu `German DL
   (undefined)`) bleibt aber erhalten, damit bestätigte Dual-Audio-Releases nicht auf 0 Punkte
   fallen. `German Microsized` ist mit `+8000` bewertet — hoch genug, dass eine kleine Gruppe
-  wie FuN oder w00t jedes noch so vollständig ausgestattete Bluray- oder Web-Tier-01-Release
-  schlägt, selbst mit Dual-Audio, IMAX, HDR und verlustfreiem Audio.
+  wie FuN, w00t oder dAV1nci jedes noch so vollständig ausgestattete Bluray- oder Web-Tier-01-
+  Release schlägt, selbst mit Dual-Audio, IMAX, HDR und verlustfreiem Audio.
 - **German Anime HD+UHD Bluray + WEB (nur Sonarr):** ein kombiniertes 1080p/2160p-Anime-Profil,
   das dem normalen Upgrade-Pfad bis UHD folgt, aber ein 2160p-Release nur dann greift, wenn es
   deutsche Tonspur hat — Nicht-deutsche UHD-Releases werden grundsätzlich blockiert.
 - **German Remux HD/UHD:** ein reines Remux-Profil — kein WEBDL/WEBRip/Bluray-Fallback bei
   keiner Auflösung. Folgt dem normalen Upgrade-Pfad von Remux-1080p zu Remux-2160p, falls
   jemals ein deutsches 2160p-Remux auftaucht.
-- **WOTT, alyh, TzP in German Bluray Tier 02:** diese Gruppen liefern gute Encodes (egal ob
-  AV1 oder x265/HEVC) und sind ganz normal als Tier-02-Gruppen gelistet — keine
+- **WOTT, POSEIDON, alyh, TzP in German Bluray Tier 02:** diese Gruppen liefern gute Encodes
+  (egal ob AV1 oder x265/HEVC) und sind ganz normal als Tier-02-Gruppen gelistet — keine
   Sonderbehandlung, kein Blocking.
-- **Audio-Codec-Belohnung:** AC3 (`DD`) und EAC3 (`DD+`) werden im 1080p- und 1080p-LQ-Profil
-  standardmäßig belohnt, dazu ein kleiner Bonus für 5.1 Surround. Im 2160p-Profil wird DTS
+- **Audio-Codec-Belohnung:** AC3 (`DD`) und EAC3 (`DD+`) werden im 1080p-Profil standardmäßig
+  **gleich hoch** belohnt (ein reines AC3-Release verliert also nicht mehr gegenüber einem sonst
+  identischen EAC3-Release), dazu ein kleiner Bonus für 5.1 Surround. Im 1080p-LQ-Profil bleibt
+  die ursprüngliche Upstream-Gewichtung (EAC3 höher als AC3) bestehen. Im 2160p-Profil wird DTS
   belohnt, dazu ein kleiner Bonus für 7.1 Surround. Im 1080p-LQ-Profil zusätzlich AAC, mit
   demselben Score wie AC3.
 - **IMAX-Belohnung (nur Radarr):** `IMAX` und `IMAX Enhanced` sind im 1080p-, 1080p-LQ- und
@@ -61,6 +63,12 @@ Der Fork ist auf die Custom-Format- und Quality-Profile-JSON-Daten unter
   in einer Bluray- als auch in der gleichnamigen Web-Tier-Liste stehen (z. B. VECTOR), bei einem
   reinen Bluray-Release beide Score-Boni gleichzeitig bekamen. Betraf nur bestimmte Gruppen, ist
   jetzt korrigiert.
+- **Fix: unerwünschte Formate wurden nicht zuverlässig geblockt:** CFs wie `Upscaled`,
+  `Obfuscated`, `BR-DISK`, `Extras`, `3D`, `Retags`, `No-RlsGroup` u. a. waren zwar über die
+  Guide-Gruppe „Unwanted Formats German" dokumentiert, aber in keinem `[lekl7]`-Profil tatsächlich
+  scharf geschaltet. Sind jetzt direkt in allen aktiven German-Profilen (1080p, 1080p LQ, 2160p,
+  UHD Alternative, Remux HD/UHD, Anime HD+UHD) verdrahtet und werden zuverlässig bestraft
+  (`German Microsized` bleibt dabei im LQ-Profil weiterhin bevorzugt, überall sonst geblockt).
 
 > **Hinweis:** Diese Änderungen wurden ausschließlich an den **German**-Profilen vorgenommen.
 > Alle anderen Profile entsprechen unverändert dem Upstream-TRaSH-Guides.
