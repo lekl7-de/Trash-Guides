@@ -79,6 +79,15 @@
       }
     },
     {
+      "name": "POSEIDON",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(POSEIDON)$"
+      }
+    },
+    {
       "name": "alyh",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
