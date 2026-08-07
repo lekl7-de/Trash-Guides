@@ -69,6 +69,15 @@
       "fields": {
         "value": "^(266ers)$"
       }
+    },
+    {
+      "name": "dAV1nci",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(dAV1nci)$"
+      }
     }
   ]
 }
