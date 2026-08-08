@@ -1,7 +1,8 @@
 {
   "trash_id": "f51b96a50b0e6196cb69724b7833d837",
   "trash_scores": {
-    "default": 1900
+    "default": 1900,
+    "german": 2650
   },
   "name": "German Web Tier 02",
   "includeCustomFormatWhenRenaming": false,

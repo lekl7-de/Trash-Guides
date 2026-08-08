@@ -58,6 +58,12 @@ Der Fork ist auf die Custom-Format- und Quality-Profile-JSON-Daten unter
   `Remaster` sind zusätzlich auch bei Sonarr aktiv (inkl. Anime HD+UHD) — die restlichen CFs
   gibt es dort nicht (reine Film-Konzepte).
 
+- **Web-Tiers auf Bluray-Niveau angehoben (nur Sonarr):** `German Web Tier 01/02/03` wurden
+  bisher niedriger bewertet als die gleichnamigen `German Bluray Tier 01/02/03` (2100/1900/1800
+  vs. 2900/2650/2300). Jetzt punktgleich, damit ein Web- und ein Bluray-Release derselben
+  Tier-Stufe gleich viel wert sind. Betrifft alle Sonarr-Profile im `german`-Score-Set (u. a.
+  1080p, UHD, UHD Alternative, Remux + WEB); das LQ-Profil nutzt einen eigenen Score-Set und
+  bleibt unverändert.
 - **Fix: Bluray-Releases wurden fälschlich zusätzlich als WEB-Release bewertet:** `German Web
   Tier 01/02/03` prüfte die WEB-Quelle nicht verpflichtend, wodurch Release-Gruppen, die sowohl
   in einer Bluray- als auch in der gleichnamigen Web-Tier-Liste stehen (z. B. VECTOR), bei einem
