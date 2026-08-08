@@ -78,6 +78,15 @@
       "fields": {
         "value": "^(dAV1nci)$"
       }
+    },
+    {
+      "name": "FritzBox",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(FritzBox)$"
+      }
     }
   ]
 }
