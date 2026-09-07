@@ -69,7 +69,7 @@
         "value": "^(RocketHD)$"
       }
     },
-        {
+    {
       "name": "toto",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
