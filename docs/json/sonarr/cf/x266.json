@@ -1,7 +1,10 @@
 {
   "trash_id": "041d90b435ebd773271cea047a457a6a",
   "trash_scores": {
-    "default": -10000
+    "default": -10000,
+    "german": -35000,
+    "german-anime": -35000,
+    "german-microsized": -35000
   },
   "name": "x266",
   "includeCustomFormatWhenRenaming": false,

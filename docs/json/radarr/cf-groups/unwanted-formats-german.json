@@ -96,6 +96,18 @@
             "trash_id": "bfd8eb01832d646a0a89c4deb46f8564",
             "required": false,
             "default": true
+        },
+        {
+            "name": "VC-1",
+            "trash_id": "11cd1db7165d6a7ad9a83bc97b8b1060",
+            "required": false,
+            "default": true
+        },
+        {
+            "name": "x266",
+            "trash_id": "390455c22a9cac81a738f6cbad705c3c",
+            "required": false,
+            "default": true
         }
     ],
     "quality_profiles": {

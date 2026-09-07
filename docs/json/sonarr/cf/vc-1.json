@@ -1,5 +1,11 @@
 {
   "trash_id": "7470a681e6205243983c4410ee4c920f",
+  "trash_scores": {
+    "default": 0,
+    "german": -35000,
+    "german-anime": -35000,
+    "german-microsized": -35000
+  },
   "name": "VC-1",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [

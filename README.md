@@ -75,6 +75,14 @@ Der Fork ist auf die Custom-Format- und Quality-Profile-JSON-Daten unter
   scharf geschaltet. Sind jetzt direkt in allen aktiven German-Profilen (1080p, 1080p LQ, 2160p,
   UHD Alternative, Remux HD/UHD, Anime HD+UHD) verdrahtet und werden zuverlässig bestraft
   (`German Microsized` bleibt dabei im LQ-Profil weiterhin bevorzugt, überall sonst geblockt).
+- **x266 (H.266/VVC) und VC-1 geblockt:** beide Video-Codecs werden in allen aktiven
+  German-Profilen (1080p, 1080p LQ, 2160p, UHD Alternative, Remux HD/UHD; bei Sonarr zusätzlich
+  Anime HD+UHD) mit `-35000` in den Score-Sets `german`, `german-anime` und `german-microsized`
+  bestraft — bei `minFormatScore: 0` bedeutet das ein hartes Reject, damit solche Releases gar
+  nicht erst gegriffen werden. `VC-1` hatte zuvor gar keinen Score, `x266` nur `default:
+  -10000`; der `default`-Score bleibt unverändert (nicht-German-Profile sind nicht betroffen).
+  Die reinen `[German] HD/UHD Remux + WEB`-Upstream-Profile sind bewusst nicht einbezogen
+  (gleiche Abgrenzung wie bei den übrigen Unwanted-Formats).
 
 > **Hinweis:** Diese Änderungen wurden ausschließlich an den **German**-Profilen vorgenommen.
 > Alle anderen Profile entsprechen unverändert dem Upstream-TRaSH-Guides.
