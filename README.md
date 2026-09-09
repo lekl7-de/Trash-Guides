@@ -70,11 +70,13 @@ Der Fork ist auf die Custom-Format- und Quality-Profile-JSON-Daten unter
   Tier-Stufe gleich viel wert sind. Betrifft alle Sonarr-Profile im `german`-Score-Set (u. a.
   1080p, UHD, UHD Alternative, Remux + WEB); das LQ-Profil nutzt einen eigenen Score-Set und
   bleibt unverändert.
-- **Fix: Bluray-Releases wurden fälschlich zusätzlich als WEB-Release bewertet:** `German Web
-  Tier 01/02/03` prüfte die WEB-Quelle nicht verpflichtend, wodurch Release-Gruppen, die sowohl
-  in einer Bluray- als auch in der gleichnamigen Web-Tier-Liste stehen (z. B. VECTOR), bei einem
-  reinen Bluray-Release beide Score-Boni gleichzeitig bekamen. Betraf nur bestimmte Gruppen, ist
-  jetzt korrigiert.
+- **Fix (Fork-eigener Bug): `German Web Tier 01/02/03` matchten gar nicht mehr:** ein
+  früherer Fork-Commit hatte die `WebDL`/`WebRip`-Source-Specs dieser CFs auf `required: true`
+  gesetzt, in der Annahme, sonst würde ein Bluray-Release fälschlich als WEB-Tier gewertet.
+  Radarr/Sonarr prüfen Specs aber pro Typ-Gruppe, und eine Gruppe fällt durch, sobald eine
+  required-Spec darin nicht zutrifft — ein Release hat nur eine Quelle, also war immer eine der
+  beiden required-Specs falsch und die Web-Tiers griffen bei keinem Release. Zurückgesetzt auf
+  den Upstream-Stand (`required: false`), der korrekt ist.
 - **Fix: unerwünschte Formate wurden nicht zuverlässig geblockt:** CFs wie `Upscaled`,
   `Obfuscated`, `BR-DISK`, `Extras`, `3D`, `Retags`, `No-RlsGroup` u. a. waren zwar über die
   Guide-Gruppe „Unwanted Formats German" dokumentiert, aber in keinem `[lekl7]`-Profil tatsächlich

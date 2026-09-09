@@ -83,7 +83,7 @@
       "name": "WebDL",
       "implementation": "SourceSpecification",
       "negate": false,
-      "required": true,
+      "required": false,
       "fields": {
         "value": 3
       }
@@ -92,7 +92,7 @@
       "name": "WebRip",
       "implementation": "SourceSpecification",
       "negate": false,
-      "required": true,
+      "required": false,
       "fields": {
         "value": 4
       }
