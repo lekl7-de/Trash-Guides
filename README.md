@@ -37,15 +37,13 @@ Der Fork ist auf die Custom-Format- und Quality-Profile-JSON-Daten unter
 - **German Remux HD/UHD:** ein reines Remux-Profil — kein WEBDL/WEBRip/Bluray-Fallback bei
   keiner Auflösung. Folgt dem normalen Upgrade-Pfad von Remux-1080p zu Remux-2160p, falls
   jemals ein deutsches 2160p-Remux auftaucht.
-- **POSEIDON, alyh, TzP in German Bluray Tier 02:** diese Gruppen liefern gute Encodes
-  (egal ob AV1 oder x265/HEVC) und sind ganz normal als Tier-02-Gruppen gelistet — keine
-  Sonderbehandlung, kein Blocking.
-- **WOTT nur als AV1-Encode bevorzugt (`German AV1 Groups`):** WOTT steht nicht mehr in
-  `German Bluray Tier 02`. Stattdessen matcht ein eigener CF nur, wenn die Gruppe WOTT ist
-  **und** `AV1` im Release-Titel steht, und vergibt `+3000` — knapp über `German Bluray Tier
-  01` (2900), sodass ein WOTT-AV1-Encode bei sonst gleichem Release jede Tier-Gruppe schlägt.
-  x265/HEVC-Releases von WOTT bekommen dadurch keinen Tier-Score mehr (nicht geblockt, nur
-  unbewertet wie jede ungelistete Gruppe). Aktiv in den 1080p-, 1080p-LQ-, 2160p- und
+- **WOTT und POSEIDON nur als AV1-Encode bevorzugt (`German AV1 Groups`):** beide Gruppen
+  stehen nicht mehr in `German Bluray Tier 02` (`alyh` und `TzP` wurden dort ebenfalls
+  entfernt und sind jetzt schlicht ungelistet). Stattdessen matcht ein eigener CF nur, wenn
+  die Gruppe WOTT oder POSEIDON ist **und** `AV1` im Release-Titel steht, und vergibt `+3000`
+  — knapp über `German Bluray Tier 01` (2900), sodass ein AV1-Encode dieser Gruppen bei sonst
+  gleichem Release jede Tier-Gruppe schlägt. x265/HEVC-Releases von WOTT/POSEIDON bekommen
+  dadurch keinen Tier-Score mehr (nicht geblockt, nur unbewertet wie jede ungelistete Gruppe). Aktiv in den 1080p-, 1080p-LQ-, 2160p- und
   UHD-Alternative-Profilen beider Apps; Remux- und Anime-Profil nutzen keine Bluray-Tiers und
   bleiben unberührt.
 - **Audio-Codec-Belohnung:** AC3 (`DD`) und EAC3 (`DD+`) werden im 1080p-Profil standardmäßig
