@@ -52,15 +52,6 @@
       }
     },
     {
-      "name": "WOTT",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(WOTT)$"
-      }
-    },
-    {
       "name": "POSEIDON",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,

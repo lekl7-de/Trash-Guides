@@ -1,0 +1,30 @@
+{
+  "trash_id": "95af12cb18834864b171c1f04895d160",
+  "trash_scores": {
+    "default": 0,
+    "german": 3000,
+    "german-microsized": 3000
+  },
+  "name": "German AV1 Groups",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "AV1",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "\\bAV1\\b"
+      }
+    },
+    {
+      "name": "WOTT",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(WOTT)$"
+      }
+    }
+  ]
+}
