@@ -1,7 +1,8 @@
 {
   "trash_id": "505d871304820ba7106b693be6fe4a9e",
   "trash_scores": {
-    "default": 500
+    "default": 500,
+    "german": 1500
   },
   "name": "HDR",
   "includeCustomFormatWhenRenaming": false,

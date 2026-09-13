@@ -57,13 +57,16 @@ Der Fork ist auf die Custom-Format- und Quality-Profile-JSON-Daten unter
 - **HDR-Belohnung:** `HDR` und `HDR10+ Boost` sind im 1080p-, 1080p-LQ- und 2160p-Profil aktiv
   (reiner Bonus, kein Blocking). `DV (w/o HDR fallback)` blockiert Dolby-Vision-Releases ohne
   HDR10-Fallback in denselben drei Profilen. Reines SDR-2160p wird nicht blockiert.
-- **HDR schlägt die Tier-Lücke (nur Radarr):** Gewünschte Reihenfolge bei sonst gleichem Release:
-  HDR Bluray > HDR Web > SDR Bluray > SDR Web. Ein Web-Release soll nur dann gewinnen, wenn es
-  HDR hat und kein HDR-Bluray existiert; bei SDR gewinnt immer Bluray. Da die Web-Tiers bei
-  Radarr bereits alle unter den Bluray-Tiers liegen, reichte es, den `HDR`-Bonus im
+- **HDR schlägt die Tier-Lücke (Radarr + Sonarr):** Gewünschte Reihenfolge bei sonst gleichem
+  Release: HDR Bluray > HDR Web > SDR Bluray > SDR Web. Ein Web-Release soll nur dann gewinnen,
+  wenn es HDR hat und kein HDR-Bluray existiert; bei SDR gewinnt immer Bluray. Da die Web-Tiers
+  im Upstream bereits alle unter den Bluray-Tiers liegen, reichte es, den `HDR`-Bonus im
   `german`-Score-Set von 500 auf 1500 anzuheben, damit er die größte Bluray-vs-Web-Tier-Lücke
-  (1100) plus kleine Zusatzboni sicher überbietet. Gilt im 1080p- und 2160p-Profil; das
-  LQ-Profil bleibt bei 500, IMAX-Bluray-Releases behalten ihren Vorsprung.
+  (1100) plus kleine Zusatzboni sicher überbietet. Gilt im 1080p- und 2160p-Profil beider
+  Apps; das LQ-Profil bleibt bei 500, das Anime-Profil ist nicht betroffen, IMAX-Bluray-
+  Releases behalten bei Radarr ihren Vorsprung. Die frühere Sonarr-Angleichung der
+  `German Web Tier 01/02/03` auf Bluray-Niveau wurde dafür wieder zurückgenommen (Upstream-
+  Werte), weil sie der Regel "SDR Bluray schlägt SDR Web" widersprach.
 - **Movie-Version-Belohnung (nur Radarr):** `Special Edition` (deckt Director's Cut, Extended,
   Unrated, Uncut u. ä. per Regex ab), `4K Remaster`, `Criterion Collection`, `Hybrid`,
   `Masters of Cinema`, `Open Matte`, `Remaster` und `Vinegar Syndrome` sind in allen
@@ -71,12 +74,6 @@ Der Fork ist auf die Custom-Format- und Quality-Profile-JSON-Daten unter
   `Remaster` sind zusätzlich auch bei Sonarr aktiv (inkl. Anime HD+UHD) — die restlichen CFs
   gibt es dort nicht (reine Film-Konzepte).
 
-- **Web-Tiers auf Bluray-Niveau angehoben (nur Sonarr):** `German Web Tier 01/02/03` wurden
-  bisher niedriger bewertet als die gleichnamigen `German Bluray Tier 01/02/03` (2100/1900/1800
-  vs. 2900/2650/2300). Jetzt punktgleich, damit ein Web- und ein Bluray-Release derselben
-  Tier-Stufe gleich viel wert sind. Betrifft alle Sonarr-Profile im `german`-Score-Set (u. a.
-  1080p, UHD, UHD Alternative, Remux + WEB); das LQ-Profil nutzt einen eigenen Score-Set und
-  bleibt unverändert.
 - **Fix (Fork-eigener Bug): `German Web Tier 01/02/03` matchten gar nicht mehr:** ein
   früherer Fork-Commit hatte die `WebDL`/`WebRip`-Source-Specs dieser CFs auf `required: true`
   gesetzt, in der Annahme, sonst würde ein Bluray-Release fälschlich als WEB-Tier gewertet.
