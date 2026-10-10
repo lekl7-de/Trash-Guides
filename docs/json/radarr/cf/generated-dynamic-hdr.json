@@ -55,6 +55,15 @@
       }
     },
     {
+      "name": "SumVision",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(SumVision)$"
+      }
+    },
+    {
       "name": "tarunk9c",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -91,21 +100,21 @@
       }
     },
     {
-      "name": "HDR10+",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\bHDR10(\\+|P(lus)?\\b)"
-      }
-    },
-    {
       "name": "DV",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
         "value": "\\b(dv|dovi|dolby[ .]?v(ision)?)\\b"
+      }
+    },
+    {
+      "name": "HDR10+",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\bHDR10(\\+|P(lus)?\\b)"
       }
     }
   ]
