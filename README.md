@@ -61,6 +61,11 @@ Der Fork ist auf die Custom-Format- und Quality-Profile-JSON-Daten unter
   `DTS-ES`, `DTS-HD HRA`, `DTS-HD MA` und `DTS X` wie `DTS` (1250). Im LQ-Profil wurden die
   Audio-CFs (`DD`, `DD+`, `AAC`, `5.1 Surround`) stattdessen ganz entfernt. Gilt für Radarr und
   Sonarr.
+- **Fix (nur Sonarr): TVS-Season-Packs verloren ihren Tier-Score:** TVS benennt die Dateien in
+  seinen Packs intern `tvs-<show>-…-x264-1201.mkv`. Sonarr liest daraus die Release-Gruppe
+  `x264-1201` statt `TVS`, wodurch `German Web Tier 01` bzw. `German Bluray Tier 01` nach dem
+  Import wegfielen und das Pack wieder als Upgrade galt. Beide CFs matchen jetzt zusätzlich
+  `x264-<Nummer>`/`x265-<Nummer>` als TVS.
 - **IMAX-Belohnung (nur Radarr):** `IMAX` und `IMAX Enhanced` sind im 1080p-, 1080p-LQ- und
   2160p-Profil aktiv.
 - **HDR-Belohnung:** `HDR` und `HDR10+ Boost` sind im 1080p-, 1080p-LQ- und 2160p-Profil aktiv

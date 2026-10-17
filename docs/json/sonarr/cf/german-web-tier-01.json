@@ -111,7 +111,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^(TVS)$"
+        "value": "^(TVS|x26[45]-\\d{3,})$"
       }
     },
     {
