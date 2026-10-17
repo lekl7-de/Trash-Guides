@@ -1,7 +1,8 @@
 {
   "trash_id": "cfa5fbd8f02a86fc55d8d223d06a5e1f",
   "trash_scores": {
-    "default": 2000
+    "default": 2000,
+    "german": 1250
   },
   "trash_regex": "https://regex101.com/r/jdUH4x/2",
   "name": "DTS-HD HRA",

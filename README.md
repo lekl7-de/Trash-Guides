@@ -52,6 +52,14 @@ Der Fork ist auf die Custom-Format- und Quality-Profile-JSON-Daten unter
   die ursprüngliche Upstream-Gewichtung (EAC3 höher als AC3) bestehen. Im 2160p-Profil wird DTS
   belohnt, dazu ein kleiner Bonus für 7.1 Surround. Im 1080p-LQ-Profil zusätzlich AAC, mit
   demselben Score wie AC3.
+- **Fix: Download-Loop durch Audio-Infos im Dateinamen:** Radarr/Sonarr prüfen Release-Title-
+  CFs nach dem Import auch gegen den umbenannten Dateinamen, der per MediaInfo den echten
+  Audio-Codec und die Kanäle enthält (z. B. `[EAC3 Atmos 7.1]`). Ein als `EAC3` gegrabbtes
+  Release, das in Wahrheit Atmos hat, verlor dadurch den `DD+`-Score (das Atmos-Negate greift)
+  und wurde endlos neu gegrabbt. Darum werden jetzt die „größeren" Varianten derselben
+  Codec-Familie gleich hoch bewertet: im 1080p-Profil `DD+ ATMOS` wie `DD+` (1750) plus
+  `6.1 Surround` (125) und `7.1 Surround` (150) neben `5.1 Surround`; im 2160p-Profil
+  `DTS-ES`, `DTS-HD HRA`, `DTS-HD MA` und `DTS X` wie `DTS` (1250). Gilt für Radarr und Sonarr.
 - **IMAX-Belohnung (nur Radarr):** `IMAX` und `IMAX Enhanced` sind im 1080p-, 1080p-LQ- und
   2160p-Profil aktiv.
 - **HDR-Belohnung:** `HDR` und `HDR10+ Boost` sind im 1080p-, 1080p-LQ- und 2160p-Profil aktiv
