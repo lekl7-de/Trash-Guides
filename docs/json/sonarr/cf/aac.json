@@ -1,8 +1,7 @@
 {
   "trash_id": "a50b8a0c62274a7c38b09a9619ba9d86",
   "trash_scores": {
-    "default": 1000,
-    "german-microsized": 750
+    "default": 1000
   },
   "name": "AAC",
   "includeCustomFormatWhenRenaming": false,
